@@ -1,14 +1,14 @@
 import React from "react";
 
 
-export default function Interaction(){
+export default function Interaction(props){
     return <section className="interaction">
-    <p>Page Views</p>
-    <img src="../images/icon-facebook.svg" alt="icon" />
-    <h3>87</h3>
+    <p>{props.cardTitle}</p>
+    <img src={props.src} alt="social-media-icon" />
+    <h3>{props.interactionNum}</h3>
     <div className="percentage">
-        <img src="../images/icon-up.svg" alt="icon" />
-        <p>3%</p>
+        <img src={props.arrow} alt="icon" />
+        <p>{props.percentage}</p>
     </div>
     </section>
 }
