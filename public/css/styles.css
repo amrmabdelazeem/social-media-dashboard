@@ -10,7 +10,7 @@ html[data-theme="light"]{
 }
 html[data-theme="dark"]{
     --main-bg-color:hsl(230, 17%, 14%);
-    --top-bg-patter:hsl(232, 19%, 15%);
+    --top-bg-pattern:hsl(232, 19%, 15%);
     --card-bg:hsl(227, 47%, 96%);
     --secondary-text-color:hsl(228, 34%, 66%);
     --primary-text-color:hsl(228, 34%, 66%);
@@ -21,7 +21,11 @@ html[data-theme="dark"]{
 *{
     font-family: 'Inter', sans-serif;
 }
-h1, h2{
+html{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3{
     color: var(--primary-text-color);
 
 }
@@ -30,13 +34,23 @@ p{
 }
 body{
     margin: 0;
-    padding:1rem 1.5rem;
     background-color: var(--main-bg-color);
+    /* padding:1rem 1.5rem; */
+
+}
+section.header{
+    background-color: var(--top-bg-pattern);
+    padding: 3rem 1.5rem 5rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+
 }
 .title{
     border-bottom: 2px solid hsl(230, 22%, 74%);
 }
 .title h1{
+    margin-top: 0;
     margin-bottom: .5rem;
 }
 
@@ -71,14 +85,20 @@ body{
     border: none;
 }
 section.account{
-    margin-bottom: 2rem;
-}
+    position: relative;
+    top: -50px;}
 .card{
     background-color: var(--card-bg);
     border-radius: 5px;
     text-align: center;
     padding: 0 0 .5rem;
     margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+.card:first-child{
+    margin-top: 0;
 }
 .info{
     display: flex;
@@ -119,4 +139,43 @@ h2 + p{
     top: 0;
     height: 5px;
     display: block;
+}
+.second-header{
+    position: relative;
+    top: -20px;
+    padding: 0 1.5rem;
+
+}
+section.interaction{
+    margin: 0 1.5rem 1rem;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    position: relative;
+    top: -20px;
+}
+.interaction img{
+    justify-self: end;
+    
+}
+.percentage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    justify-self: end;
+}
+.interaction p{
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.interaction h3{
+    font-size: 2rem;
+    margin: 0;
 }
