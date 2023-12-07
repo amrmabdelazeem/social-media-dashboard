@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Account({
   src,
@@ -9,13 +9,9 @@ export default function Account({
   progress,
   style,
   addBorder,
+  isUp
 }) {
-  const [isUp, setIsUp] = useState(true);
-  function checkState(){
-    if(title==="@Nathan F."){
-        setIsUp(!isUp);
-      }
-  }
+
 
   return (
     <div className="card" style={style} id={addBorder}>
@@ -25,7 +21,8 @@ export default function Account({
       </div>
       <h2>{followerNum}</h2>
       <p>{postTitle}</p>
-      <div className="progress" onLoad={checkState}>
+      <div className="progress"
+      >
         <img src={arrow} alt="progress-icon" />
         <p
           style={{ color: isUp ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}
