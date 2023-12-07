@@ -3,3 +3,44 @@
 *{
     font-family: 'Inter', sans-serif;
 }
+body{
+    margin: 0;
+    padding:1rem 1.5rem
+}
+.title{
+    border-bottom: 2px solid hsl(230, 22%, 74%);
+}
+.title h1{
+    margin-bottom: .5rem;
+}
+
+.title p{
+    margin-top: 0;
+    font-size: .9rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.theme-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.theme-area p{
+    font-weight: 700;
+    font-size: .9rem;
+}
+.toggle-element{
+    background-color:hsl(230, 22%, 74%) ;
+    width: 2.5rem;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: end;
+    padding: .2rem;
+}
+.toggle-element button{
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+}
