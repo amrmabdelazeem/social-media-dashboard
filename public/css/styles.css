@@ -5,7 +5,8 @@
 }
 body{
     margin: 0;
-    padding:1rem 1.5rem
+    padding:1rem 1.5rem;
+    background-color: #fff;
 }
 .title{
     border-bottom: 2px solid hsl(230, 22%, 74%);
@@ -31,7 +32,7 @@ body{
 }
 .toggle-element{
     background-color:hsl(230, 22%, 74%) ;
-    width: 2.5rem;
+    width: 2.2rem;
     border-radius: .8rem;
     display: flex;
     justify-content: end;
