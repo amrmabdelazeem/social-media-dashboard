@@ -52,57 +52,57 @@ export default function App() {
         cardTitle="Page Views"
         interactionNum="87"
         percentage="3%"
-        src=""
-        arrow=""
+        src="../images/icon-facebook.svg"
+        arrow="../images/icon-up.svg"
       />
       <Interaction
         cardTitle="Likes"
         interactionNum="52"
         percentage="2%"
-        src=""
-        arrow=""
+        src="../images/icon-facebook.svg"
+        arrow="../images/icon-down.svg"
       />
       <Interaction
         cardTitle="Likes"
         interactionNum="5462"
         percentage="2257%"
-        src=""
-        arrow=""
+        src="../images/icon-instagram.svg"
+        arrow="../images/icon-up.svg"
       />
       <Interaction
         cardTitle="Profile Views"
         interactionNum="52k"
         percentage="1375%"
-        src=""
-        arrow=""
+        src="../images/icon-instagram.svg"
+        arrow="../images/icon-up.svg"
       />
       <Interaction
         cardTitle="Retweets"
         interactionNum="117"
         percentage="303%"
-        src=""
-        arrow=""
+        src="../images/icon-twitter.svg"
+        arrow="../images/icon-up.svg"
       />
       <Interaction
         cardTitle="Likes"
         interactionNum="507"
         percentage="553%"
-        src=""
-        arrow=""
+        src="../images/icon-twitter.svg"
+        arrow="../images/icon-up.svg"
       />
       <Interaction
         cardTitle="Likes"
         interactionNum="107"
         percentage="19%"
-        src=""
-        arrow=""
+        src="../images/icon-youtube.svg"
+        arrow="../images/icon-down.svg"
       />
       <Interaction
         cardTitle="Total Views"
         interactionNum="1407"
         percentage="12%"
-        src=""
-        arrow=""
+        src="../images/icon-youtube.svg"
+        arrow="../images/icon-up.svg"
       />
     </>
   );
