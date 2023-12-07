@@ -11,11 +11,10 @@ html[data-theme="light"]{
 html[data-theme="dark"]{
     --main-bg-color:hsl(230, 17%, 14%);
     --top-bg-pattern:hsl(232, 19%, 15%);
-    --card-bg:hsl(227, 47%, 96%);
+    --card-bg:hsl(228, 28%, 20%);
     --secondary-text-color:hsl(228, 34%, 66%);
-    --primary-text-color:hsl(228, 34%, 66%);
-    --additional-text-color:hsl(0, 0%, 100%);
-    --toggle-theme: linear-gradient(to right, rgb(55, 143, 230)hsl(146, 68%, 55%));
+    --primary-text-color:hsl(0, 0%, 100%);
+    --toggle-theme: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 *{
@@ -47,7 +46,7 @@ section.header{
 
 }
 .title{
-    border-bottom: 2px solid hsl(230, 22%, 74%);
+    border-bottom: 2px solid var(--card-bg);
 }
 .title h1{
     margin-top: 0;
