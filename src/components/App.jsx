@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Heading />
-      <section>
+      <section className="account">
         <Account
           src="../images/icon-facebook.svg"
           title="@nathanf"
@@ -44,6 +44,9 @@ export default function App() {
           style={{ borderTop: "5px solid hsl(348, 97%, 39%)" }}
         />
       </section>
+      <header>
+        <h2>Overview - Today</h2>
+      </header>
     </>
   );
 }
