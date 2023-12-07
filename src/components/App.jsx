@@ -4,6 +4,8 @@ import Account from "./Account";
 import Interaction from "./Interaction";
 
 export default function App() {
+
+    const isUp = true;
   return (
     <>
       <Heading />
@@ -16,6 +18,7 @@ export default function App() {
           arrow="../images/icon-up.svg"
           progress="12 Today"
           style={{ borderTop: "5px solid hsl(208, 92%, 53%)" }}
+          isUp={isUp}
         />
         <Account
           src="../images/icon-twitter.svg"
@@ -25,6 +28,7 @@ export default function App() {
           arrow="../images/icon-up.svg"
           progress="99 Today"
           style={{ borderTop: "5px solid hsl(203, 89%, 53%)" }}
+          isUp={isUp}
         />
         <Account
           addBorder="instagram"
@@ -34,6 +38,7 @@ export default function App() {
           postTitle="FOLLOWERS"
           arrow="../images/icon-up.svg"
           progress="1099 Today"
+          isUp={isUp}
         />
         <Account
           src="../images/icon-youtube.svg"
@@ -42,6 +47,7 @@ export default function App() {
           postTitle="SUBSCRIBERS"
           arrow="../images/icon-down.svg"
           progress="144 Today"
+          isUp={!isUp}
           style={{ borderTop: "5px solid hsl(348, 97%, 39%)" }}
         />
       </section>
@@ -54,6 +60,7 @@ export default function App() {
         percentage="3%"
         src="../images/icon-facebook.svg"
         arrow="../images/icon-up.svg"
+        isUp={isUp}
       />
       <Interaction
         cardTitle="Likes"
@@ -61,6 +68,7 @@ export default function App() {
         percentage="2%"
         src="../images/icon-facebook.svg"
         arrow="../images/icon-down.svg"
+        isUp={!isUp}
       />
       <Interaction
         cardTitle="Likes"
@@ -68,6 +76,7 @@ export default function App() {
         percentage="2257%"
         src="../images/icon-instagram.svg"
         arrow="../images/icon-up.svg"
+        isUp={isUp}
       />
       <Interaction
         cardTitle="Profile Views"
@@ -75,6 +84,7 @@ export default function App() {
         percentage="1375%"
         src="../images/icon-instagram.svg"
         arrow="../images/icon-up.svg"
+        isUp={isUp}
       />
       <Interaction
         cardTitle="Retweets"
@@ -82,6 +92,7 @@ export default function App() {
         percentage="303%"
         src="../images/icon-twitter.svg"
         arrow="../images/icon-up.svg"
+        isUp={isUp}
       />
       <Interaction
         cardTitle="Likes"
@@ -89,6 +100,7 @@ export default function App() {
         percentage="553%"
         src="../images/icon-twitter.svg"
         arrow="../images/icon-up.svg"
+        isUp={isUp}
       />
       <Interaction
         cardTitle="Likes"
@@ -96,6 +108,7 @@ export default function App() {
         percentage="19%"
         src="../images/icon-youtube.svg"
         arrow="../images/icon-down.svg"
+        isUp={!isUp}
       />
       <Interaction
         cardTitle="Total Views"
@@ -103,6 +116,7 @@ export default function App() {
         percentage="12%"
         src="../images/icon-youtube.svg"
         arrow="../images/icon-up.svg"
+        isUp={isUp}
       />
     </>
   );
