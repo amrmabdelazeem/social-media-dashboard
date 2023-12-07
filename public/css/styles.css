@@ -15,7 +15,7 @@ html[data-theme="dark"]{
     --secondary-text-color:hsl(228, 34%, 66%);
     --primary-text-color:hsl(228, 34%, 66%);
     --additional-text-color:hsl(0, 0%, 100%);
-    --toggle-theme: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --toggle-theme: linear-gradient(to right, rgb(55, 143, 230)hsl(146, 68%, 55%));
 }
 
 *{
@@ -70,12 +70,11 @@ body{
     border-radius: 50%;
     border: none;
 }
-.account-layer{
+.card{
     background-color: var(--card-bg);
-    border-top: 5px solid hsl(208, 92%, 53%);
     border-radius: 5px;
     text-align: center;
-    padding: 1.5rem 0 .5rem;
+    padding: 0 0 .5rem;
     margin-top: 2rem;
 }
 .info{
@@ -83,12 +82,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    margin-top: 1.5rem;
 }
 .info p{
     font-size: .8rem;
     font-weight: 700;
 }
-.account-layer h2{
+.card h2{
     font-size: 4rem;
     margin-top: .5rem;
     margin-bottom: 0;
@@ -104,6 +104,16 @@ h2 + p{
     gap: .3rem;
     font-weight: 700;
 }
-.progress p{
-    color:hsl(163, 72%, 41%) ;
+
+#instagram{
+    background: var(--card-bg);
+    padding-top: 0;
+    overflow:auto;
+}
+#instagram::before{
+    content: "";
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    top: 0;
+    height: 5px;
+    display: block;
 }
