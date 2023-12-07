@@ -8,7 +8,7 @@ export default function Account() {
         <p>@nathanf</p>
       </div>
       <h2>1987</h2>
-      <p>Followers</p>
+      <p>FOLLOWERS</p>
       <div className="progress">
         <img src="../images/icon-up.svg" alt="up-icon" />
         <p> 12 Today</p>
