@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useState} from "react";
 
-export default function Account({src, title, followerNum, postTitle,arrow, progress}) {
+export default function Account({src, title, followerNum, postTitle,arrow, progress, style, isUp, addBorder}) {
+
   return (
-    <div className="account-layer">
+
+    <div className="card" style={style} id={addBorder}>
       <div className="info">
         <img src={src} alt="social-media-icon" />
         <p>{title}</p>
@@ -11,7 +13,7 @@ export default function Account({src, title, followerNum, postTitle,arrow, progr
       <p>{postTitle}</p>
       <div className="progress">
         <img src={arrow} alt="progress-icon" />
-        <p>{progress}</p>
+        <p style={{color:isUp? "hsl(163, 72%, 41%)": "hsl(356, 69%, 56%)"}}>{progress}</p>
       </div>
     </div>
   );
