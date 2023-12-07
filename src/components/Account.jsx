@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
-export default function Account({src, title, followerNum, postTitle,arrow, progress, style, isUp, addBorder}) {
-
+export default function Account({src, title, followerNum, postTitle,arrow, progress,isUp, style, addBorder}) {
+    
   return (
 
     <div className="card" style={style} id={addBorder}>
