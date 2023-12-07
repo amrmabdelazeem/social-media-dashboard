@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Heading() {
   return (
-    <section>
+    <section className="header">
       <div className="title">
         <h1>Social Media Dashboard</h1>
         <p>Total Followers: 23,004</p>
