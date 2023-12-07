@@ -9,6 +9,7 @@ export default function App(){
         <section>
             <Account src="../images/icon-facebook.svg" title="@nathanf" followerNum="1987" postTitle="FOLLOWERS" arrow="../images/icon-up.svg" progress="12 Today"/>
             <Account src="../images/icon-twitter.svg" title="@nathanf" followerNum="1044" postTitle="FOLLOWERS" arrow="../images/icon-up.svg" progress="99 Today"/>
+            <Account src="../images/icon-instagram.svg" title="@realnathanf" followerNum="11K" postTitle="FOLLOWERS" arrow="../images/icon-up.svg" progress="1099 Today"/>
         </section>
     </>
 }
