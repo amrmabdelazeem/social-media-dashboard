@@ -6,8 +6,6 @@ import Interaction from "./Interaction";
 export default function App() {
     const isUp = true;
 
-
-
   return (
     <>
       <Heading />
