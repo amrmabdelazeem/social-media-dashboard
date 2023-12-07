@@ -21,6 +21,13 @@ html[data-theme="dark"]{
 *{
     font-family: 'Inter', sans-serif;
 }
+h1, h2{
+    color: var(--primary-text-color);
+
+}
+p{
+    color: var(--secondary-text-color);
+}
 body{
     margin: 0;
     padding:1rem 1.5rem;
@@ -30,7 +37,6 @@ body{
     border-bottom: 2px solid hsl(230, 22%, 74%);
 }
 .title h1{
-    color: var(--primary-text-color);
     margin-bottom: .5rem;
 }
 
@@ -39,7 +45,6 @@ body{
     font-size: .9rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: var(--secondary-text-color);
 }
 .theme-area{
     display: flex;
@@ -49,7 +54,6 @@ body{
 .theme-area p{
     font-weight: 700;
     font-size: .9rem;
-    color: var(--secondary-text-color);
 }
 .toggle-element{
     background: var(--toggle-theme);
@@ -65,4 +69,41 @@ body{
     height: 1rem;
     border-radius: 50%;
     border: none;
+}
+.account-layer{
+    background-color: var(--card-bg);
+    border-top: 5px solid hsl(208, 92%, 53%);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1.5rem 0 .5rem;
+    margin-top: 2rem;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.info p{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.account-layer h2{
+    font-size: 4rem;
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+h2 + p{
+    letter-spacing: 5px;
+    margin-top: 0;
+}
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    font-weight: 700;
+}
+.progress p{
+    color:hsl(163, 72%, 41%) ;
 }
