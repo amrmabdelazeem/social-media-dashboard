@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "./Heading";
 import Account from "./Account";
+import Interaction from "./Interaction";
 
 export default function App() {
   return (
@@ -44,9 +45,10 @@ export default function App() {
           style={{ borderTop: "5px solid hsl(348, 97%, 39%)" }}
         />
       </section>
-      <header>
+      <header className="second-header">
         <h2>Overview - Today</h2>
       </header>
+      <Interaction/>
     </>
   );
 }
