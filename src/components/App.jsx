@@ -4,8 +4,10 @@ import Account from "./Account";
 import Interaction from "./Interaction";
 
 export default function App() {
-
     const isUp = true;
+
+
+
   return (
     <>
       <Heading />
@@ -52,7 +54,7 @@ export default function App() {
         />
       </section>
       <header className="second-header">
-        <h2>Overview - Today</h2>
+        <h3>Overview - Today</h3>
       </header>
       <Interaction
         cardTitle="Page Views"
@@ -115,8 +117,8 @@ export default function App() {
         interactionNum="1407"
         percentage="12%"
         src="../images/icon-youtube.svg"
-        arrow="../images/icon-up.svg"
-        isUp={isUp}
+        arrow="../images/icon-down.svg"
+        isUp={!isUp}
       />
     </>
   );

@@ -24,7 +24,7 @@ html{
     padding: 0;
     margin: 0;
 }
-h1, h2, h3{
+h1, h2, h4{
     color: var(--primary-text-color);
 
 }
@@ -46,7 +46,7 @@ section.header{
 
 }
 .title{
-    border-bottom: 2px solid var(--card-bg);
+    border-bottom:1px solid hsl(228, 28%, 20%);
 }
 .title h1{
     margin-top: 0;
@@ -63,6 +63,7 @@ section.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: .3rem;
 }
 .theme-area p{
     font-weight: 700;
@@ -125,6 +126,7 @@ h2 + p{
     align-items: center;
     gap: .3rem;
     font-weight: 700;
+    font-size: .8rem;
 }
 
 #instagram{
@@ -143,7 +145,8 @@ h2 + p{
     position: relative;
     top: -20px;
     padding: 0 1.5rem;
-
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
 }
 section.interaction{
     margin: 0 1.5rem 1rem;
@@ -174,7 +177,7 @@ section.interaction{
     font-weight: 700;
 }
 
-.interaction h3{
+.interaction h4{
     font-size: 2rem;
     margin: 0;
 }

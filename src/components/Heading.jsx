@@ -1,6 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 
 export default function Heading() {
+  const [status, setStatus] = useState(true);
+  function handleClick(){
+    if(status){
+      document.querySelector("html").setAttribute("data-theme", "dark");
+      
+    }else{
+      document.querySelector("html").setAttribute("data-theme", "light");
+    }
+    setStatus((prevStatus)=>{
+      return !prevStatus;
+    })
+  }
   return (
     <section className="header">
       <div className="title">
@@ -9,8 +21,8 @@ export default function Heading() {
       </div>
       <div className="theme-area">
       <p>Dark Mode</p>
-      <div className="toggle-element">
-        <button/>
+      <div className="toggle-element" style={{justifyContent: status ? "end" : "start"}}>
+        <button onClick={handleClick}/>
       </div>
       </div>
     </section>

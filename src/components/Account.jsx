@@ -9,10 +9,8 @@ export default function Account({
   progress,
   style,
   addBorder,
-  isUp
+  isUp,
 }) {
-
-
   return (
     <div className="card" style={style} id={addBorder}>
       <div className="info">
@@ -21,8 +19,7 @@ export default function Account({
       </div>
       <h2>{followerNum}</h2>
       <p>{postTitle}</p>
-      <div className="progress"
-      >
+      <div className="progress">
         <img src={arrow} alt="progress-icon" />
         <p
           style={{ color: isUp ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}
