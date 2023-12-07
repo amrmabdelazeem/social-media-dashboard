@@ -6,6 +6,7 @@ html[data-theme="light"]{
     --card-bg:hsl(227, 47%, 96%);
     --secondary-text-color:hsl(228, 12%, 44%);
     --primary-text-color:hsl(230, 17%, 14%);
+    --toggle-theme:hsl(230, 22%, 74%);
 }
 html[data-theme="dark"]{
     --main-bg-color:hsl(230, 17%, 14%);
@@ -14,6 +15,7 @@ html[data-theme="dark"]{
     --secondary-text-color:hsl(228, 34%, 66%);
     --primary-text-color:hsl(228, 34%, 66%);
     --additional-text-color:hsl(0, 0%, 100%);
+    --toggle-theme: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 *{
@@ -22,12 +24,13 @@ html[data-theme="dark"]{
 body{
     margin: 0;
     padding:1rem 1.5rem;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
 }
 .title{
     border-bottom: 2px solid hsl(230, 22%, 74%);
 }
 .title h1{
+    color: var(--primary-text-color);
     margin-bottom: .5rem;
 }
 
@@ -36,6 +39,7 @@ body{
     font-size: .9rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    color: var(--secondary-text-color);
 }
 .theme-area{
     display: flex;
@@ -45,9 +49,10 @@ body{
 .theme-area p{
     font-weight: 700;
     font-size: .9rem;
+    color: var(--secondary-text-color);
 }
 .toggle-element{
-    background-color:hsl(230, 22%, 74%) ;
+    background: var(--toggle-theme);
     width: 2.2rem;
     border-radius: .8rem;
     display: flex;
