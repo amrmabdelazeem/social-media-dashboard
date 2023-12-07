@@ -1,6 +1,9 @@
 import React from 'react';
+import Heading from './Heading';
 
 
 export default function App(){
-    return <h1>Hello</h1>
+    return <>
+        <Heading/>
+    </>
 }
