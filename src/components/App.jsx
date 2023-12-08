@@ -58,6 +58,7 @@ export default function App() {
       <header className="second-header">
         <h3>Overview - Today</h3>
       </header>
+      <section className="interaction">
       <Interaction
         iconPath="../images/icon-"
         cardTitle="Page Views"
@@ -126,6 +127,7 @@ export default function App() {
         arrow="down"
         checked={false}
       />
+      </section>
     </>
   );
 }
