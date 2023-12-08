@@ -5,13 +5,11 @@ import Interaction from "./Interaction";
 
 export default function App() {
 
-  const iconPath = "../images/icon-";
   return (
     <>
       <Heading />
       <section className="account">
         <Account
-          iconPath="../images/icon-"
           src="facebook"
           title="@nathanf"
           followerNum="1987"
@@ -22,7 +20,6 @@ export default function App() {
           checked={true}
         />
         <Account
-          iconPath="../images/icon-"
           src="twitter"
           title="@nathanf"
           followerNum="1044"
@@ -33,7 +30,6 @@ export default function App() {
           checked={true}
         />
         <Account
-          iconPath="../images/icon-"
           addBorder="instagram"
           src="instagram"
           title="@realnathanf"
@@ -44,7 +40,6 @@ export default function App() {
           checked={true}
         />
         <Account
-          iconPath="../images/icon-"
           src="youtube"
           title="@Nathan F."
           followerNum="8239"
@@ -60,7 +55,6 @@ export default function App() {
       </header>
       <section className="last-section">
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Page Views"
         interactionNum="87"
         percentage="3%"
@@ -68,7 +62,6 @@ export default function App() {
         arrow="up"
         checked={true}      />
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="52"
         percentage="2%"
@@ -77,7 +70,6 @@ export default function App() {
         checked={false}
       />
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="5462"
         percentage="2257%"
@@ -85,7 +77,6 @@ export default function App() {
         arrow="up"
         checked={true}      />
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Profile Views"
         interactionNum="52k"
         percentage="1375%"
@@ -93,7 +84,6 @@ export default function App() {
         arrow="up"
         checked={true}      />
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Retweets"
         interactionNum="117"
         percentage="303%"
@@ -101,7 +91,6 @@ export default function App() {
         arrow="up"
         checked={true}      />
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="507"
         percentage="553%"
@@ -110,7 +99,6 @@ export default function App() {
         checked={true}
       />
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="107"
         percentage="19%"
@@ -119,7 +107,6 @@ export default function App() {
         checked={false}
       />
       <Interaction
-        iconPath="../images/icon-"
         cardTitle="Total Views"
         interactionNum="1407"
         percentage="12%"

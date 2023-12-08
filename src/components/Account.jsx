@@ -9,9 +9,9 @@ export default function Account({
   progress,
   style,
   addBorder,
-  iconPath,
   checked
 }) {
+  const iconPath = "./images/icon-";
 
   
   return (
