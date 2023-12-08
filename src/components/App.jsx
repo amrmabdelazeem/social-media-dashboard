@@ -58,7 +58,7 @@ export default function App() {
       <header className="second-header">
         <h3>Overview - Today</h3>
       </header>
-      <section className="interaction">
+      <section className="last-section">
       <Interaction
         iconPath="../images/icon-"
         cardTitle="Page Views"
