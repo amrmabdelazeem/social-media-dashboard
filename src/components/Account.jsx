@@ -10,17 +10,18 @@ export default function Account({
   style,
   addBorder,
   isUp,
+  iconPath
 }) {
   return (
     <div className="card" style={style} id={addBorder}>
       <div className="info">
-        <img src={src} alt="social-media-icon" />
+        <img src={iconPath+src+".svg"} alt="social-media-icon" />
         <p>{title}</p>
       </div>
       <h2>{followerNum}</h2>
       <p>{postTitle}</p>
       <div className="progress">
-        <img src={arrow} alt="progress-icon" />
+        <img src={iconPath+arrow+".svg"} alt="progress-icon" />
         <p
           style={{ color: isUp ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}
         >

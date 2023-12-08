@@ -4,48 +4,52 @@ import Account from "./Account";
 import Interaction from "./Interaction";
 
 export default function App() {
-    const isUp = true;
-
+  const isUp = true;
+  const iconPath = "../images/icon-";
   return (
     <>
       <Heading />
       <section className="account">
         <Account
-          src="../images/icon-facebook.svg"
+          iconPath="../images/icon-"
+          src="facebook"
           title="@nathanf"
           followerNum="1987"
           postTitle="FOLLOWERS"
-          arrow="../images/icon-up.svg"
+          arrow="up"
           progress="12 Today"
           style={{ borderTop: "5px solid hsl(208, 92%, 53%)" }}
           isUp={isUp}
         />
         <Account
-          src="../images/icon-twitter.svg"
+          iconPath="../images/icon-"
+          src="twitter"
           title="@nathanf"
           followerNum="1044"
           postTitle="FOLLOWERS"
-          arrow="../images/icon-up.svg"
+          arrow="up"
           progress="99 Today"
           style={{ borderTop: "5px solid hsl(203, 89%, 53%)" }}
           isUp={isUp}
         />
         <Account
+          iconPath="../images/icon-"
           addBorder="instagram"
-          src="../images/icon-instagram.svg"
+          src="instagram"
           title="@realnathanf"
           followerNum="11K"
           postTitle="FOLLOWERS"
-          arrow="../images/icon-up.svg"
+          arrow="up"
           progress="1099 Today"
           isUp={isUp}
         />
         <Account
-          src="../images/icon-youtube.svg"
+          iconPath="../images/icon-"
+          src="youtube"
           title="@Nathan F."
           followerNum="8239"
           postTitle="SUBSCRIBERS"
-          arrow="../images/icon-down.svg"
+          arrow="down"
           progress="144 Today"
           isUp={!isUp}
           style={{ borderTop: "5px solid hsl(348, 97%, 39%)" }}
@@ -55,67 +59,75 @@ export default function App() {
         <h3>Overview - Today</h3>
       </header>
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Page Views"
         interactionNum="87"
         percentage="3%"
-        src="../images/icon-facebook.svg"
-        arrow="../images/icon-up.svg"
+        src="facebook"
+        arrow="up"
         isUp={isUp}
       />
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="52"
         percentage="2%"
-        src="../images/icon-facebook.svg"
-        arrow="../images/icon-down.svg"
+        src="facebook"
+        arrow="down"
         isUp={!isUp}
       />
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="5462"
         percentage="2257%"
-        src="../images/icon-instagram.svg"
-        arrow="../images/icon-up.svg"
+        src="instagram"
+        arrow="up"
         isUp={isUp}
       />
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Profile Views"
         interactionNum="52k"
         percentage="1375%"
-        src="../images/icon-instagram.svg"
-        arrow="../images/icon-up.svg"
+        src="instagram"
+        arrow="up"
         isUp={isUp}
       />
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Retweets"
         interactionNum="117"
         percentage="303%"
-        src="../images/icon-twitter.svg"
-        arrow="../images/icon-up.svg"
+        src="twitter"
+        arrow="up"
         isUp={isUp}
       />
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="507"
         percentage="553%"
-        src="../images/icon-twitter.svg"
-        arrow="../images/icon-up.svg"
+        src="twitter"
+        arrow="up"
         isUp={isUp}
       />
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Likes"
         interactionNum="107"
         percentage="19%"
-        src="../images/icon-youtube.svg"
-        arrow="../images/icon-down.svg"
+        src="youtube"
+        arrow="down"
         isUp={!isUp}
       />
       <Interaction
+        iconPath="../images/icon-"
         cardTitle="Total Views"
         interactionNum="1407"
         percentage="12%"
-        src="../images/icon-youtube.svg"
-        arrow="../images/icon-down.svg"
+        src="youtube"
+        arrow="down"
         isUp={!isUp}
       />
     </>
