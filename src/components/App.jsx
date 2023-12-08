@@ -4,7 +4,7 @@ import Account from "./Account";
 import Interaction from "./Interaction";
 
 export default function App() {
-  const isUp = true;
+
   const iconPath = "../images/icon-";
   return (
     <>
@@ -19,7 +19,7 @@ export default function App() {
           arrow="up"
           progress="12 Today"
           style={{ borderTop: "5px solid hsl(208, 92%, 53%)" }}
-          isUp={isUp}
+          checked={true}
         />
         <Account
           iconPath="../images/icon-"
@@ -30,7 +30,7 @@ export default function App() {
           arrow="up"
           progress="99 Today"
           style={{ borderTop: "5px solid hsl(203, 89%, 53%)" }}
-          isUp={isUp}
+          checked={true}
         />
         <Account
           iconPath="../images/icon-"
@@ -41,7 +41,7 @@ export default function App() {
           postTitle="FOLLOWERS"
           arrow="up"
           progress="1099 Today"
-          isUp={isUp}
+          checked={true}
         />
         <Account
           iconPath="../images/icon-"
@@ -51,7 +51,7 @@ export default function App() {
           postTitle="SUBSCRIBERS"
           arrow="down"
           progress="144 Today"
-          isUp={!isUp}
+          checked={false}
           style={{ borderTop: "5px solid hsl(348, 97%, 39%)" }}
         />
       </section>
@@ -65,8 +65,7 @@ export default function App() {
         percentage="3%"
         src="facebook"
         arrow="up"
-        isUp={isUp}
-      />
+        checked={true}      />
       <Interaction
         iconPath="../images/icon-"
         cardTitle="Likes"
@@ -74,7 +73,7 @@ export default function App() {
         percentage="2%"
         src="facebook"
         arrow="down"
-        isUp={!isUp}
+        checked={false}
       />
       <Interaction
         iconPath="../images/icon-"
@@ -83,8 +82,7 @@ export default function App() {
         percentage="2257%"
         src="instagram"
         arrow="up"
-        isUp={isUp}
-      />
+        checked={true}      />
       <Interaction
         iconPath="../images/icon-"
         cardTitle="Profile Views"
@@ -92,8 +90,7 @@ export default function App() {
         percentage="1375%"
         src="instagram"
         arrow="up"
-        isUp={isUp}
-      />
+        checked={true}      />
       <Interaction
         iconPath="../images/icon-"
         cardTitle="Retweets"
@@ -101,8 +98,7 @@ export default function App() {
         percentage="303%"
         src="twitter"
         arrow="up"
-        isUp={isUp}
-      />
+        checked={true}      />
       <Interaction
         iconPath="../images/icon-"
         cardTitle="Likes"
@@ -110,7 +106,7 @@ export default function App() {
         percentage="553%"
         src="twitter"
         arrow="up"
-        isUp={isUp}
+        checked={true}
       />
       <Interaction
         iconPath="../images/icon-"
@@ -119,7 +115,7 @@ export default function App() {
         percentage="19%"
         src="youtube"
         arrow="down"
-        isUp={!isUp}
+        checked={false}
       />
       <Interaction
         iconPath="../images/icon-"
@@ -128,7 +124,7 @@ export default function App() {
         percentage="12%"
         src="youtube"
         arrow="down"
-        isUp={!isUp}
+        checked={false}
       />
     </>
   );

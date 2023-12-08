@@ -9,11 +9,13 @@ export default function Account({
   progress,
   style,
   addBorder,
-  isUp,
-  iconPath
+  iconPath,
+  checked
 }) {
+
+  
   return (
-    <div className="card" style={style} id={addBorder}>
+    <div className="card" style={style} id={addBorder} >
       <div className="info">
         <img src={iconPath+src+".svg"} alt="social-media-icon" />
         <p>{title}</p>
@@ -23,7 +25,7 @@ export default function Account({
       <div className="progress">
         <img src={iconPath+arrow+".svg"} alt="progress-icon" />
         <p
-          style={{ color: isUp ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}
+          style={{ color: checked ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}
         >
           {progress}
         </p>

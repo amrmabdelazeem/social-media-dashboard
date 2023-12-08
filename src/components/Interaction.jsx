@@ -8,7 +8,7 @@ export default function Interaction(props){
     <h4>{props.interactionNum}</h4>
     <div className="percentage">
         <img src={props.iconPath+props.arrow+".svg"} alt="icon" />
-        <p style={{color: props.isUp ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}>{props.percentage}</p>
+        <p style={{color: props.checked ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}>{props.percentage}</p>
     </div>
     </section>
 }
