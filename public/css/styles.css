@@ -7,6 +7,7 @@ html[data-theme="light"]{
     --secondary-text-color:hsl(228, 12%, 44%);
     --primary-text-color:hsl(230, 17%, 14%);
     --toggle-theme:hsl(230, 22%, 74%);
+    --hover:hsl(227, 47%, 89%);
 }
 html[data-theme="dark"]{
     --main-bg-color:hsl(230, 17%, 14%);
@@ -15,6 +16,7 @@ html[data-theme="dark"]{
     --secondary-text-color:hsl(228, 34%, 66%);
     --primary-text-color:hsl(0, 0%, 100%);
     --toggle-theme: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --hover:hsl(228, 28%, 25%);
 }
 
 *{
@@ -85,7 +87,6 @@ section.header{
     border-radius: 50%;
     border: none;
     cursor: pointer;
-
 }
 section.account{
     position: relative;
@@ -98,7 +99,6 @@ section.account{
     margin-top: 2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-
 }
 .card:first-child{
     margin-top: 0;
@@ -136,6 +136,10 @@ h2 + p{
     background: var(--card-bg);
     padding-top: 0;
     overflow:auto;
+}
+#instagram:hover, .card:hover, section.interaction:hover{
+    cursor: pointer;
+    background-color: var(--hover);
 }
 #instagram::before{
     content: "";
@@ -183,4 +187,51 @@ section.interaction{
 .interaction h4{
     font-size: 2rem;
     margin: 0;
+}
+
+@media (min-width:1200px){
+    section.header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3rem 6rem;
+        height: 150px;
+    }
+    section.account{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 6rem;
+        top:-100px;
+        gap:1.5rem;
+    }
+    .title{
+        border-bottom:none;
+    }
+    .theme-area{
+        margin-top: 0;
+        gap: 1rem;
+    }
+    .card{
+        margin: 0;
+    }
+    .second-header{
+        top:-70px;
+        margin-left: 4.5rem;
+    }
+    .last-section{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 6rem 1rem;
+        gap: 1.2rem 1.5rem;
+        position: relative;
+        top: -40px;
+    }
+    section.interaction{
+        margin: 0;
+    }
+    .interaction h4{
+        font-size: 1.7rem;
+    }
+
 }
