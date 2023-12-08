@@ -70,6 +70,14 @@ section.header{
     font-weight: 700;
     font-size: .9rem;
 }
+.social-img{
+    width: 20px;
+    height: 20px;
+}
+.arrow-icon{
+    width: 8px;
+    height: 5px;
+}
 .toggle-element{
     background: var(--toggle-theme);
     width: 2.2rem;

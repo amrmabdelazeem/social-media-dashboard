@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/social-media-dashboard/static/js/main.26c5e193.js",
-    "index.html": "/social-media-dashboard/index.html",
-    "main.26c5e193.js.map": "/social-media-dashboard/static/js/main.26c5e193.js.map"
+    "main.js": "/static/js/main.dead99eb.js",
+    "index.html": "/index.html",
+    "main.dead99eb.js.map": "/static/js/main.dead99eb.js.map"
   },
   "entrypoints": [
-    "static/js/main.26c5e193.js"
+    "static/js/main.dead99eb.js"
   ]
 }
