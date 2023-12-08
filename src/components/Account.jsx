@@ -17,13 +17,13 @@ export default function Account({
   return (
     <div className="card" style={style} id={addBorder} >
       <div className="info">
-        <img src={iconPath+src+".svg"} alt="social-media-icon" />
+        <img src={iconPath+src+".svg"} alt="social-media-icon" className="social-img"/>
         <p>{title}</p>
       </div>
       <h2>{followerNum}</h2>
       <p>{postTitle}</p>
       <div className="progress">
-        <img src={iconPath+arrow+".svg"} alt="progress-icon" />
+        <img src={iconPath+arrow+".svg"} alt="progress-icon" className="arrow-icon"/>
         <p
           style={{ color: checked ? "hsl(163, 72%, 41%)" : "hsl(356, 69%, 56%)" }}
         >

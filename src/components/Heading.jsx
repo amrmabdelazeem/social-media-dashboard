@@ -22,7 +22,7 @@ export default function Heading() {
       <div className="theme-area">
       <p>Dark Mode</p>
       <div onClick={handleClick} className="toggle-element" style={{justifyContent: status ? "end" : "start"}}>
-        <button type="button" />
+        <button aria-label="toggle" title="toggle" />
       </div>
       </div>
     </section>
