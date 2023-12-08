@@ -36,7 +36,6 @@ p{
 body{
     margin: 0;
     background-color: var(--main-bg-color);
-    /* padding:1rem 1.5rem; */
 
 }
 section.header{
@@ -81,12 +80,17 @@ section.header{
     cursor: pointer;
 
 }
+.toggle-element:hover, .toggle-element:focus{
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+}
 .toggle-element button{
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    background-color: var(--card-bg);
 }
 section.account{
     position: relative;
