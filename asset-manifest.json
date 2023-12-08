@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.dead99eb.js",
-    "index.html": "/index.html",
-    "main.dead99eb.js.map": "/static/js/main.dead99eb.js.map"
+    "main.js": "/social-media-dashboard/static/js/main.dead99eb.js",
+    "index.html": "/social-media-dashboard/index.html",
+    "main.dead99eb.js.map": "/social-media-dashboard/static/js/main.dead99eb.js.map"
   },
   "entrypoints": [
     "static/js/main.dead99eb.js"
